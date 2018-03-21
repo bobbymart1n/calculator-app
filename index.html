@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Calculator</title>
@@ -11,7 +12,7 @@
   <body>
     <div class="container">
       <h1>Calculator</h1>
-      <form id="add">
+      <form id="calculate">
         <div class="form-group">
           <label for="add1">1st number:</label>
           <input type="text" id="add1" class="form-control">
@@ -20,7 +21,22 @@
           <label for="add2">2nd number:</label>
           <input type="text" id="add2" class="form-control">
         </div>
-        <button type="submit">Add!</button>
+        <div class="btn-group-toggle" data-toggle="buttons">
+          <label for="addition" class="btn btn-secondary">
+            <input type="radio" name="choice" value="add">Add!
+          </label>
+          <label for="subtraction" class="btn btn-secondary">
+            <input type="radio" name="choice" value="sub">Subtract!
+          </label>
+          <label for="multiplication" class="btn btn-secondary">
+            <input type="radio" name="choice" value="mult">Multiply!
+          </label>
+          <label for="division" class="btn btn-secondary">
+            <input type="radio" name="choice" value="div">Divide!
+          </label>
+        </div>
+
+        <button type="submit">calculate</button>
       </form>
       <div id="output">
 
